@@ -1,0 +1,145 @@
+<style>
+.char{
+  position: relative;
+}
+.backpack{
+  top: 10vh;
+  left: 2vw;
+  position: absolute;
+  border: 5px solid #000;
+  height: 21vh;
+  width: 8vw;
+  border-radius: 2vh;
+  background: #830d1b;
+  border-radius: 5vh 0 0 5vh;
+  opacity: 0;
+  animation-delay: 2s;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.backpack .shadow{
+  background: #c51111;
+  border-radius: 6vh 0 0 2vh;
+  width: 7vh;
+  height: 5vh;
+}
+
+.body{
+  top: 0;
+  left: 5vw;
+  position: absolute;
+  border: 5px solid #000;
+  height: 33vh;
+  width: 12vw;
+  border-radius: 9vh 14vh 0vh 0vh;
+  background: #830d1b;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.body .shadow{
+  background: #c51111;
+  border-radius: 8vh 14vh 9vh 14vh;
+  width: 12vw;
+  height: 29vh;
+}
+
+.face{
+  top: 9vh;
+  left: 9vw;
+  position: absolute;
+  border: 5px solid #000;
+  height: 10vh;
+  width: 9vw;
+  border-radius: 4vh 5vh 5vh 7vh;;
+  background: #435b62;
+  border-top: 0;
+  z-index: 1;
+  
+  opacity: 0;
+  animation-delay: 4s;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.face .shadow{
+  background: #94c9db;
+  border-radius: 55vh 95vh 27vh 79vh;
+  width: 9vw;
+  height: 7vh;
+}
+
+.face .light{
+  background: #fff;
+  border-radius: 36vh 48vh 82vh 92vh;
+  width: 4vw;
+  height: 3vh;
+  position: absolute;
+  top: 13px;
+  left: 4vw;
+}
+
+.left-leg{
+  top: 33vh;
+  left: 5vw;
+  position: absolute;
+  border: 5px solid #000;
+  height: 8vh;
+  width: 5vw;
+  border-radius: 0 0 3vh 6vh;
+  background: #830d1b;
+  border-top: 0;
+  
+  opacity: 0;
+  animation-delay: 6s;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.right-leg{
+  top: 33vh;
+  left: 12vw;
+  position: absolute;
+  border: 5px solid #000;
+  height: 8vh;
+  width: 5vw;
+  border-radius: 0 0 3vh 6vh;
+  background: #830d1b;
+  border-top: 0;
+  
+  opacity: 0;
+  animation-delay: 6s;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes appear{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+</style>
+
+
+<div class="char">
+  <div class="backpack">
+    <div class="shadow"></div>
+  </div>
+  <div class="body">
+    <div class="shadow"></div>
+  </div>
+  <div class="face">
+    <div class="shadow"></div>
+    <div class="light"></div>
+  </div>
+  <div class="left-leg"></div>
+  <div class="right-leg"></div>
+</div>
